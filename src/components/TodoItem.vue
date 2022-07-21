@@ -53,7 +53,7 @@ export default {
     };
   },
   computed: {
-    ...mapStores([useTodoStore]),
+    ...mapStores(useTodoStore),
   },
   methods: {
     modeHandler() {

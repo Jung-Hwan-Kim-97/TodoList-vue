@@ -25,7 +25,7 @@ export default {
   },
 
   computed: {
-    ...mapStores([useTodoStore]),
+    ...mapStores(useTodoStore),
   },
   async created() {
     await this.todoStore.readTodos();
