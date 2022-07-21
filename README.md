@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+## 기능구현 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### pinia
+- 전역 상태관리는 pinia를 이용했습니다
 
-## Recommended IDE Setup
+### GET
+- 투두리스트 전체 목록을 조회 할 수 있는 기능이 구현되었습니다
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+### POST 
+- 투두리스트를 생성 할 수 있는 기능이 구현되었습니다
+
+### PUT
+- 투두리스트를 수정 할 수 있는 기능이 구현되었습니다
+
+### DELETE 
+- 투두리스트를 삭제 할 수 있는 기능이 구현되었습니다

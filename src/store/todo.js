@@ -60,21 +60,6 @@ export const useTodoStore = defineStore("todo", {
         console.log(err);
       }
     },
-    //todo 삭제
-    async deleteTodo(id) {
-      try {
-        const { data } = await axios({
-          url: `${END_POINT}/${id}`,
-          method: "DELETE",
-          headers: {
-            ...headers,
-          },
-        });
-        console.log(data);
-      } catch (err) {
-        console.log(err);
-      }
-    },
     //todo 수정
     async editTodo(payload) {
       const { done, id, order } = payload;
@@ -90,6 +75,21 @@ export const useTodoStore = defineStore("todo", {
             done,
             id,
             order,
+          },
+        });
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    //todo 삭제
+    async deleteTodo(id) {
+      try {
+        const { data } = await axios({
+          url: `${END_POINT}/${id}`,
+          method: "DELETE",
+          headers: {
+            ...headers,
           },
         });
         console.log(data);
